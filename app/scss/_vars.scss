@@ -1,0 +1,59 @@
+//Брейкпойнты
+$xl:1200px;
+$lg:992px;
+$md:768px;
+$sm:576px;
+
+
+//Базовые размеры
+$layoutWidht:1540;
+$containerWidth:1170;
+
+
+//Базовые цвета
+$defColor:#3172B9;
+$fontGray:#787878;
+$fontDark:#1C1C1C;
+
+
+//Функции
+
+
+//адаптивный размер свойства
+@mixin adaptive-value($property, $startSize, $minSize,$isImportant,$type) {
+    $addSize: $startSize - $minSize;
+    @if $type == 1 {
+        //только если меншье контейнера
+        @if $isImportant == 1{
+            #{$property}: $startSize + px !important;
+            @media (max-width: #{$containerWidth + px}){
+                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$containerWidth - 320}) !important 
+            }
+        }@else{
+            #{$property}: $startSize + px;
+            @media (max-width: #{$containerWidth + px}){
+                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$containerWidth - 320}) 
+            }
+        }
+        
+    }
+    @else if $type == 2 {
+        //только если меншье контейнера
+        @if $isImportant == 1{
+            #{$property}: $startSize + px !important;
+            @media (min-width: #{$containerWidth + px}){
+                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$layoutWidht - 320}) !important
+            }
+        }@else{
+            #{$property}: $startSize + px;
+            @media (min-width: #{$containerWidth + px}){
+                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$layoutWidht - 320}) 
+            }
+        }
+        
+    }
+    @else{
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$layoutWidht - 320});
+    }
+}
+

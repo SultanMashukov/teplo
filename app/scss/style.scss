@@ -1,0 +1,23 @@
+@import "_nullstyles.scss";
+@import "_fonts.scss";
+@import "_vars.scss";
+@import "_burger_menu.scss";
+@import "_blocks.scss";
+body{
+    font-family: OpenSans;
+    font-weight: normal;
+    font-size: 14px;
+}
+.wrapper{
+    
+} 
+.container{
+    max-width: #{$containerWidth}px;
+    margin: 0 auto;
+    @media (max-width:$xl) {
+        padding: 0 20px;
+    }
+}
+
+
+
