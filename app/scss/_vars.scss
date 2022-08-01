@@ -6,16 +6,16 @@ $sm:576px;
 
 
 //Базовые размеры
-$layoutWidht:1540;
-$containerWidth:1170;
+$layoutWidht:1920;
+$containerWidth:1200;
 
 
 //Базовые цвета
-$defColor:#3172B9;
-$fontGray:#787878;
-$fontDark:#1C1C1C;
-
-
+:root {
+    --color-blue: #005AFF;
+    --color-gray: #37455C;
+    --color-whitegray: #37455C;
+}
 //Функции
 
 

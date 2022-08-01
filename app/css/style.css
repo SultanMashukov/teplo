@@ -73,35 +73,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  font-family: OpenSans;
+  font-family: 'Gotham Pro';
   font-display: swap;
-  src: url(../fonts/OpenSans-Regular.woff), url(../fonts/OpenSans-Regular.woff2);
-  font-weight: normal;
+  src: url("../fonts/GothamPro-Medium.eot");
+  src: local("Gotham Pro Medium"), local("GothamPro-Medium"), url("../fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: OpenSans;
+  font-family: 'Gotham Pro';
   font-display: swap;
-  src: url(../fonts/OpenSans-Light.woff), url(../fonts/OpenSans-Light.woff2);
+  src: url("../fonts/GothamPro-Bold.eot");
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"), url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  font-display: swap;
+  src: url("../fonts/GothamPro-Light.eot");
+  src: local("Gotham Pro Light"), local("GothamPro-Light"), url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: OpenSans;
+  font-family: 'Gotham Pro';
   font-display: swap;
-  src: url(../fonts/OpenSans-SemiBold.woff), url(../fonts/OpenSans-SemiBold.woff2);
-  font-weight: 600;
+  src: url("../fonts/GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"), url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: OpenSans;
-  font-display: swap;
-  src: url(../fonts/OpenSans-Bold.woff), url(../fonts/OpenSans-Bold.woff2);
-  font-weight: 700;
-  font-style: normal;
+:root {
+  --color-blue: #005AFF;
+  --color-gray: #37455C;
+  --color-whitegray: #37455C;
 }
 
 .burger-menu-wrapper {
@@ -207,13 +217,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  font-family: OpenSans;
+  font-family: Gotham Pro;
   font-weight: normal;
   font-size: 14px;
 }
 
+svg {
+  fill: black;
+  stroke: black;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 

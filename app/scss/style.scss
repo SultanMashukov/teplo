@@ -4,12 +4,17 @@
 @import "_burger_menu.scss";
 @import "_blocks.scss";
 body{
-    font-family: OpenSans;
+    font-family: Gotham Pro;
     font-weight: normal;
     font-size: 14px;
 }
+svg{
+    fill: black;
+    stroke: black;
+}
 .wrapper{
-    
+    max-width: #{$layoutWidht}px;
+    margin: 0 auto;
 } 
 .container{
     max-width: #{$containerWidth}px;
