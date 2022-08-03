@@ -57,3 +57,7 @@ $containerWidth:1200;
     }
 }
 
+//Получение величины в процентах от величины родителя
+@function pxToPercent($sizePx,$parentSizePx) {    
+    @return ($sizePx * 100) / $parentSizePx;
+}

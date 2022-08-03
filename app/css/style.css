@@ -216,6 +216,37 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 
+.socials__text {
+  font-size: 16px;
+}
+
+.socials__itemLink {
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.socials__itemLink::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.socials__itemLink--viber::before {
+  background-color: #7D3DAF;
+}
+
+.socials__itemLink--whatsapp::before {
+  background-color: #1FB69F;
+}
+
+.socials__itemLink--telegram::before {
+  background-color: #2CA0DA;
+}
+
 .blueText {
   color: var(--color-blue);
 }
@@ -256,7 +287,20 @@ svg {
   }
 }
 
+/*HEADER*/
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1757px;
+  margin: 0 auto;
+  color: var(--color-gray);
+}
+
+.header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,22 +309,45 @@ svg {
           align-items: center;
 }
 
-.header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header__logoImg {
+  max-width: 142px;
+}
+
+.header__logoText {
+  margin-left: 15px;
+  display: none;
 }
 
 .header__socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 7.68355%;
+  width: 24.3597%;
+}
+
+.header__socials > .socials__itemLink {
+  margin-left: 7.68355%;
 }
 
 .header__phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 4.26864%;
+  width: 13.71656%;
+  font-weight: bold;
+}
+
+.header__phoneIcon {
+  width: 19px;
+  height: 19px;
+}
+
+.header__phoneNumber {
+  font-size: 20px;
+  margin-left: 12px;
+  color: var(--color-gray);
 }
 
 .header__buttons {
@@ -288,6 +355,11 @@ svg {
   display: -ms-flexbox;
   display: flex;
   color: white;
+  width: 30.50655%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 11.38304%;
 }
 
 .header__button {
@@ -295,19 +367,33 @@ svg {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 42px 18px;
-  stroke: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 50%;
+  cursor: pointer;
 }
 
-.header__button--left > .svgBackground .path {
-  fill: var(--color-gray);
+.header__button--left {
+  padding-left: 10.26119%;
+  padding-right: 4.66418%;
 }
 
 .header__button--right {
-  fill: var(--color-blue);
+  padding-left: 3.35821%;
+  padding-right: 7.08955%;
 }
 
 .header__buttonIcon {
   height: 26px;
   width: 26px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 26px;
+          flex: 1 0 26px;
 }
+
+.header__buttonText {
+  font-size: 16px;
+  margin-left: 7.08955%;
+}
+
+/*END HEADER*/

@@ -9,13 +9,39 @@
 }
 
 .socials {
-	&__text { }
+	&__text { 
+        font-size: 16px;
+    }
 	&__item {
-		&--viber { }
-		&--whatsapp { }
-		&--telegram { }
 	}
-	&__itemLink { }
+	&__itemLink { 
+        margin-left: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        &::before{
+            content: '';
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+		&--viber { 
+            &::before{
+                background-color: #7D3DAF;
+            }
+        }
+		&--whatsapp {
+            &::before{
+                background-color: #1FB69F;
+            }
+        }
+		&--telegram { 
+            &::before{
+                background-color: #2CA0DA;
+            }
+        }
+    }
 }
 .blueText { 
     color: var(--color-blue);

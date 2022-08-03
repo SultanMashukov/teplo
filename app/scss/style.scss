@@ -23,42 +23,78 @@ svg{
         padding: 0 20px;
     }
 }
+/*HEADER*/
 .header {
     display: flex;
     align-items: center;
+    max-width: 1757px;
+    margin: 0 auto;
+    color: var(--color-gray);
 	&__logo { 
         display: flex;
+        align-items: center;
     }
-	&__logoImg { }
-	&__logoText { }
+	&__logoImg {
+        max-width: 142px;
+    }
+	&__logoText { 
+        margin-left: 15px;
+        display: none;
+    }
 	&__socials { 
         display: flex;
+        margin-left: pxToPercent(135, 1757)#{'%'};
+        width: pxToPercent(428, 1757)#{'%'};
+        &>.socials__itemLink{
+            margin-left: pxToPercent(135, 1757)#{'%'};
+        }
     }
-	&__phone {display: flex;}
-	&__phoneIcon { }
-	&__phoneNumber { }
+	&__phone {
+        display: flex;
+        margin-left: pxToPercent(75, 1757)#{'%'};
+        width: pxToPercent(241, 1757)#{'%'};
+        font-weight: bold;
+    }
+	&__phoneIcon {
+        width: 19px;
+        height: 19px;
+    }
+	&__phoneNumber {
+        font-size: 20px;
+        margin-left: 12px;
+        color: var(--color-gray);
+    }
 	&__buttons {
         display: flex;
         color: white;
+        width: pxToPercent(536, 1757)#{'%'};
+        align-items: center;
+        margin-left: pxToPercent(200, 1757)#{'%'};
 	}
 	&__button { 
         display: flex;
         position: relative;
-        padding: 42px 18px;
-        stroke: none;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 50%;
+        cursor: pointer;
         &--left {
-            &>.svgBackground .path{
-                fill: var(--color-gray);
-            }
-            
+            padding-left: pxToPercent(55, 536)#{'%'};
+            padding-right: pxToPercent(25, 536)#{'%'};
         }
 		&--right {
-            fill: var(--color-blue);
+            padding-left: pxToPercent(18, 536)#{'%'};
+            padding-right: pxToPercent(38, 536)#{'%'};
         }
     }
 	&__buttonIcon {
         height: 26px;
         width: 26px;
+        flex: 1 0 26px;
     }
-	&__buttonText { }
+	&__buttonText { 
+        font-size: 16px;
+        margin-left: pxToPercent(19, 268)#{'%'};
+    }
 }
+/*END HEADER*/
