@@ -9,8 +9,8 @@ body{
     font-size: 14px;
 }
 svg{
-    fill: black;
-    stroke: black;
+    width: 100%;
+    height: 100%;
 }
 .wrapper{
     max-width: #{$layoutWidht}px;
@@ -23,6 +23,42 @@ svg{
         padding: 0 20px;
     }
 }
-
-
-
+.header {
+    display: flex;
+    align-items: center;
+	&__logo { 
+        display: flex;
+    }
+	&__logoImg { }
+	&__logoText { }
+	&__socials { 
+        display: flex;
+    }
+	&__phone {display: flex;}
+	&__phoneIcon { }
+	&__phoneNumber { }
+	&__buttons {
+        display: flex;
+        color: white;
+	}
+	&__button { 
+        display: flex;
+        position: relative;
+        padding: 42px 18px;
+        stroke: none;
+        &--left {
+            &>.svgBackground .path{
+                fill: var(--color-gray);
+            }
+            
+        }
+		&--right {
+            fill: var(--color-blue);
+        }
+    }
+	&__buttonIcon {
+        height: 26px;
+        width: 26px;
+    }
+	&__buttonText { }
+}
