@@ -128,19 +128,6 @@ h6 {
   --color-blue: #005AFF;
   --color-gray: #37455C;
   --color-whitegray: #EFF4F5;
-  --fontSize-12: 12px;
-  --fontSize-14: 14px;
-  --fontSize-16: 16px;
-  --fontSize-18: 18px;
-  --fontSize-20: 20px;
-  --fontSize-22: 22px;
-  --fontSize-24: 24px;
-  --fontSize-28: 28px;
-  --fontSize-30: 30px;
-  --fontSize-35: 35px;
-  --fontSize-45: 45px;
-  --fontSize-75: 75px;
-  --fontSize-110: 110px;
 }
 
 .burger-menu-wrapper {
@@ -265,6 +252,96 @@ svg {
 
 .scrollBlocked {
   overflow-y: hidden;
+}
+
+.infoPopup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  background-color: var(--color-blue);
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity .6s;
+  -o-transition: opacity .6s;
+  transition: opacity .6s;
+}
+
+.infoPopup--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.infoPopup__content {
+  padding: 20px 10px;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.infoPopup__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.infoPopup__text {
+  margin-bottom: 20px;
+  line-height: 1.2;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.infoPopup__link {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  color: inherit;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.infoPopup__link:hover {
+  color: chartreuse;
+}
+
+.infoPopup__submit {
+  display: block;
+  background-color: unset;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 10px 30px;
+  -webkit-transition: color .3s, border .3s;
+  -o-transition: color .3s, border .3s;
+  transition: color .3s, border .3s;
+}
+
+.infoPopup__submit:hover {
+  color: chartreuse;
+  border: 1px solid chartreuse;
 }
 
 .bcg-layer {
@@ -4006,18 +4083,6 @@ svg {
 }
 
 @media screen and (max-width: 414px) {
-  :root {
-    --fontSize-110: 40px;
-    --fontSize-75: 35px;
-    --fontSize-45: 26px;
-    --fontSize-30: 24px;
-    --fontSize-28: 22px;
-    --fontSize-24: 14px;
-    --fontSize-22: 18px;
-    --fontSize-20: 16px;
-    --fontSize-16: 12px;
-  }
-
   .benifits__item {
     width: 97%;
     line-height: 1.2;

@@ -33,6 +33,71 @@ svg{
     overflow-y: hidden;
 }
 
+.infoPopup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    background-color: var(--color-blue);
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    &--active{
+        opacity: 1;
+        pointer-events: all;
+    }
+    &__content {
+        padding: 20px 10px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        line-height: 1.2;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    &__link {
+        cursor: pointer;
+        border-bottom: 1px solid white;
+        color: inherit;
+        transition: color .3s;
+        &:hover{
+            color: chartreuse;
+        }
+    }
+    &__submit{
+        display: block;
+        background-color: unset;
+        color: inherit;
+        border: 1px solid currentColor;
+        padding: 10px 30px;
+        transition: color .3s, border .3s;
+        &:hover{
+            color: chartreuse;
+            border: 1px solid chartreuse;
+        }
+    }
+}
+
+
 .bcg-layer{
     height: 100%;
     width: 100%;

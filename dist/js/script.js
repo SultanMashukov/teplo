@@ -107,3 +107,14 @@
     })
     
 }
+//Попап с инфо о сайте
+{
+    document.querySelector('.callbackPin').addEventListener('click', function(params) {
+        document.querySelector('.infoPopup').classList.add('infoPopup--active')
+        document.body.classList.add('scrollBlocked');
+    })
+    document.querySelector('.infoPopup__submit').addEventListener('click', function(e) {
+        document.querySelector('.infoPopup').classList.remove('infoPopup--active')
+        document.body.classList.remove('scrollBlocked');
+    })
+}
