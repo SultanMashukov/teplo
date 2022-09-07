@@ -1,53 +1,84 @@
-<div class="header">
-    <div class="header__logo">
-        <div class="header__logoImg">
-            <img src="/images/logo.svg" alt="Гарт">
+<header class="header">
+    <div class="header__inner">
+        <div class="header__content">
+            <div class="header__logo">
+                <div class="header__logoImg">
+                    <img src="/images/logo.svg" alt="Гарт">
+                </div>
+                <div class="header__logoText">
+                    Качественное<br>
+                    бурение скважин
+                </div>
+            </div>
+            <div class="headerScroller">
+                <div class="headerScroller__row">
+                    <a class="headerScroller__item" href="#" data-number="2">Опыт работы</a>
+                    <a class="headerScroller__item" href="#" data-number="4">Техника</a>
+                    <a class="headerScroller__item" href="#" data-number="5">Качество</a>
+                    <a class="headerScroller__item" href="#" data-number="6">Гарантии</a>
+                    <a class="headerScroller__item" href="#" data-number="7">Результат</a>
+                    <a class="headerScroller__item" href="#" data-number="8">Цена</a>
+                    <a class="headerScroller__item" href="#" data-number="9">Карта глубин</a>
+                    <a class="headerScroller__item" href="#" data-number="10">Быстро</a>
+                    <a class="headerScroller__item" href="#" data-number="11">Схема работ</a>
+                    <a class="headerScroller__item" href="#" data-number="12">Контакты</a>
+                </div>
+            </div>
+            <div class="socials header__socials">
+                <div class="socials__text">Напишите нам</div>
+                <div class="socials__item">
+                    <a class="socials__itemLink socials__itemLink--viber" href="#">Viber</a>
+                </div>
+                <div class="socials__item">
+                    <a class="socials__itemLink socials__itemLink--whatsapp" href="#">Whatsapp</a>
+                </div>
+                <div class="socials__item">
+                    <a class="socials__itemLink socials__itemLink--telegram" href="#">Telegram</a>
+                </div>
+            </div>
+            <div class="header__phone">
+                <div class="header__phoneIcon">
+                    <svg><use xlink:href="/images/symbolSprite.svg#headphone"></use></svg>
+                </div>
+                <a class="header__phoneNumber" href="#">+7 (3952) <span class="header__phoneColored">799-343</span></a>
+            </div>
+            <div class="header__buttons">
+                <div class="header__button header__button--left">
+                    <div class="header__buttonIcon">
+                        <svg><use xlink:href="/images/symbolSprite.svg#placemark"></use></svg>
+                    </div>
+                    <div class="header__buttonText">
+                        Узнать глубину на участке
+                    </div>
+                </div>
+                <div class="header__button header__button--right">
+                    <div class="header__buttonIcon">
+                        <svg><use xlink:href="/images/symbolSprite.svg#rouble"></use></svg>
+                    </div>
+                    <div class="header__buttonText">
+                        Рассчитать стоимость бурения
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="header__logoText">
-            Качественное<br>
-            бурение скважин
+        <div class="header__mobileContent mobileHaeder">
+            <div class="header__phone mobileHaeder__phone">
+                <div class="header__phoneIcon">
+                    <svg><use xlink:href="/images/symbolSprite.svg#headphone"></use></svg>
+                </div>
+                <a class="header__phoneNumber" href="#">+7 (3952) <span class="header__phoneColored">799-343</span></a>
+            </div>
+            <div class="mobileHaeder__buttons">
+                <div class="mobileHaeder__callback">
+                    <svg><use xlink:href="/images/symbolSprite.svg#rouble"></use></svg>
+                </div>
+                
+                <button class="mobileHaeder__toggleMenu">
+                    <div class="burger-menu-wrapper">
+                        <div class="hamburger-menu"></div>	  
+                    </div>
+                </button>
+            </div>
         </div>
     </div>
-    <div class="socials header__socials">
-        <div class="socials__text">Напишите нам</div>
-        <div class="socials__item">
-            <a class="socials__itemLink socials__itemLink--viber" href="#">Viber</a>
-        </div>
-        <div class="socials__item">
-            <a class="socials__itemLink socials__itemLink--whatsapp" href="#">Whatsapp</a>
-        </div>
-        <div class="socials__item">
-            <a class="socials__itemLink socials__itemLink--telegram" href="#">Telegram</a>
-        </div>
-    </div>
-    <div class="header__phone">
-        <div class="header__phoneIcon">
-            <svg><use xlink:href="/images/symbolSprite.svg#headphone"></use></svg>
-        </div>
-        <a class="header__phoneNumber" href="#">+7 (3952) <span class="blueText">799-343</span></a>
-    </div>
-    <div class="header__buttons">
-        <div class="header__button header__button--left">
-            <svg class="svgBackground">
-                <use xlink:href="/images/symbolSprite.svg#bg_headbtn2"></use>
-            </svg>
-            <div class="header__buttonIcon">
-                <svg><use xlink:href="/images/symbolSprite.svg#placemark"></use></svg>
-            </div>
-            <div class="header__buttonText">
-                Узнать глубину на участке
-            </div>
-        </div>
-        <div class="header__button header__button--right">
-            <svg class="svgBackground">
-                <use xlink:href="/images/symbolSprite.svg#bg_headbtn"></use>
-            </svg>
-            <div class="header__buttonIcon">
-                <svg><use xlink:href="/images/symbolSprite.svg#rouble"></use></svg>
-            </div>
-            <div class="header__buttonText">
-                Узнать глубину на участке
-            </div>
-        </div>
-    </div>
-</div>
+</header>

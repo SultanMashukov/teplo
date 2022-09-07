@@ -5,12 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New page</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
+        <div class="scroller">
+            <div class="scroller__row">
+                <div class="scroller__indicator"></div>
+                <div class="scroller__item" data-number="1">
+                    <div class="scroller__itemNumber">01</div>
+                    <div class="scroller__itemText">Бурение</div>
+                </div>
+                <div class="scroller__item scroller__item--active" data-number="2">
+                    <div class="scroller__itemNumber">02</div>
+                    <div class="scroller__itemText">Опыт работы</div>
+                </div>
+                <div class="scroller__item" data-number="3">
+                    <div class="scroller__itemNumber">03</div>
+                    <div class="scroller__itemText">Сравнение</div>
+                </div>
+                <div class="scroller__item" data-number="4">
+                    <div class="scroller__itemNumber">04</div>
+                    <div class="scroller__itemText">Техника</div>
+                </div>
+                <div class="scroller__item" data-number="5">
+                    <div class="scroller__itemNumber">05</div>
+                    <div class="scroller__itemText">Качество</div>
+                </div>
+                <div class="scroller__item" data-number="6">
+                    <div class="scroller__itemNumber">06</div>
+                    <div class="scroller__itemText">Гарантии</div>
+                </div>
+                <div class="scroller__item" data-number="7">
+                    <div class="scroller__itemNumber">07</div>
+                    <div class="scroller__itemText">Результат</div>
+                </div>
+                <div class="scroller__item" data-number="8">
+                    <div class="scroller__itemNumber">08</div>
+                    <div class="scroller__itemText">Цена</div>
+                </div>
+                <div class="scroller__item" data-number="9">
+                    <div class="scroller__itemNumber">09</div>
+                    <div class="scroller__itemText">Карта глубин</div>
+                </div>
+                <div class="scroller__item" data-number="10">
+                    <div class="scroller__itemNumber">10</div>
+                    <div class="scroller__itemText">Быстро</div>
+                </div>
+                <div class="scroller__item" data-number="11">
+                    <div class="scroller__itemNumber">11</div>
+                    <div class="scroller__itemText">Схема работ</div>
+                </div>
+                <div class="scroller__item" data-number="12">
+                    <div class="scroller__itemNumber">12</div>
+                    <div class="scroller__itemText">Контакты</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="callbackPin">
+            <svg class="svgBackground">
+                <use href="/images/svg/callbackPinBg.svg#callbackPinBg"></use>
+            </svg>
+            <div class="callbackPin__icon">
+                <svg>
+                    <use xlink:href="/images/symbolSprite.svg#headphone"></use>
+                </svg>
+            </div>
+            <div class="callbackPin__text">
+                Online <br> консультант
+            </div>
+        </div>
         @@include('blocks/_fixed_header.html')
+        @@include('blocks/_1_screen.html')
+        @@include('blocks/_2_screen.html')
+        @@include('blocks/_3_screen.html')
+        @@include('blocks/_4_screen.html')
+        @@include('blocks/_5_screen.html')
+        @@include('blocks/_6_screen.html')
+        @@include('blocks/_7_screen.html')
+        @@include('blocks/_8_screen.html')
+        @@include('blocks/_9_screen.html')
+        @@include('blocks/_10_screen.html')
+        @@include('blocks/_11_screen.html')
+        @@include('blocks/_fixed_blocks.html')
     </div>
-    <script src="js/main.js"></script>
+    <svg class="clipPathWrap" width="1" height="1" viewBox="0 0 1 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="clipPath-btn" clipPathUnits="objectBoundingBox">
+                <path d="M0.0349842 0C0.0168765 -1.90646e-09 0.00219728 0.0373096 0.00219727 0.0833333L0.00219727 0.226588C0.00219727 0.256272 0.00840995 0.283716 0.0185071 0.298633L0.483501 0.985635C0.49369 1.00069 0.506272 1.00069 0.516456 0.985636L0.981465 0.298633C0.991559 0.283716 0.997772 0.256272 0.997772 0.226587V0.083333C0.997772 0.0373094 0.983096 9.98208e-08 0.964985 9.79144e-08L0.0349842 0Z" fill="#37455C"/>
+        </clipPath>
+    </svg>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

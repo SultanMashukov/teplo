@@ -2,19 +2,45 @@
 $xl:1200px;
 $lg:992px;
 $md:768px;
-$sm:576px;
+$sm:414px;
 
 
 //Базовые размеры
 $layoutWidht:1920;
-$containerWidth:1200;
+$containerWidth:1204;
 
 
-//Базовые цвета
+
 :root {
+    //Базовые цвета
     --color-blue: #005AFF;
     --color-gray: #37455C;
-    --color-whitegray: #37455C;
+    --color-whitegray: #EFF4F5;
+    //Размеры шрифтов
+    --fontSize-12: 12px;
+    --fontSize-14: 14px;
+    --fontSize-16: 16px;
+    --fontSize-18: 18px;
+    --fontSize-20: 20px;
+    --fontSize-22: 22px;
+    --fontSize-24: 24px;
+    --fontSize-28: 28px;
+    --fontSize-30: 30px;
+    --fontSize-35: 35px;
+    --fontSize-45: 45px;
+    --fontSize-75: 75px;
+    --fontSize-110: 110px;
+    @media screen and (max-width: $sm) {
+        --fontSize-110: 40px;
+        --fontSize-75: 35px;
+        --fontSize-45: 26px;
+        --fontSize-30: 24px;
+        --fontSize-28: 22px;
+        --fontSize-24: 14px;
+        --fontSize-22: 18px;
+        --fontSize-20: 16px;
+        --fontSize-16: 12px;
+    }
 }
 //Функции
 
@@ -27,12 +53,12 @@ $containerWidth:1200;
         @if $isImportant == 1{
             #{$property}: $startSize + px !important;
             @media (max-width: #{$containerWidth + px}){
-                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$containerWidth - 320}) !important 
+                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 414px) / #{$containerWidth - 414}) !important 
             }
         }@else{
             #{$property}: $startSize + px;
             @media (max-width: #{$containerWidth + px}){
-                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$containerWidth - 320}) 
+                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 414px) / #{$containerWidth - 414}) 
             }
         }
         
@@ -42,22 +68,22 @@ $containerWidth:1200;
         @if $isImportant == 1{
             #{$property}: $startSize + px !important;
             @media (min-width: #{$containerWidth + px}){
-                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$layoutWidht - 320}) !important
+                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 414px) / #{$layoutWidht - 414}) !important
             }
         }@else{
             #{$property}: $startSize + px;
             @media (min-width: #{$containerWidth + px}){
-                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$layoutWidht - 320}) 
+                #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 414px) / #{$layoutWidht - 414}) 
             }
         }
         
     }
     @else{
-        #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 320px) / #{$layoutWidht - 320});
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - 414px) / #{$layoutWidht - 414});
     }
 }
 
 //Получение величины в процентах от величины родителя
-@function pxToPercent($sizePx,$parentSizePx) {    
-    @return ($sizePx * 100) / $parentSizePx;
+@function pxToPercent($sizePx, $parentSizePx) {    
+    @return (($sizePx * 100)/$parentSizePx);
 }

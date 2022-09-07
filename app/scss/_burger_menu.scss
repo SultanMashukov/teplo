@@ -1,11 +1,11 @@
-$bar-width:50px;
-$bar-height: 3px;
-$bar-spacing: 15px;
-$bar-colors:black;
+$bar-width:19px;
+$bar-height: 2px;
+$bar-spacing: 4px;
+$bar-colors:white;
 
 .burger-menu-wrapper{
     display: none;
-    margin: 0 40px;
+    margin: 0px;
     @media (max-width:$lg) {
         display: block;
     }
@@ -30,7 +30,7 @@ $bar-colors:black;
 .hamburger-menu {
 	position: relative;
 	transform: translateY($bar-spacing);
-	background: $bar-colors;
+	background:unset;
 	transition: all 0ms 300ms;
   
   &.animate {

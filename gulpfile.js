@@ -19,13 +19,9 @@ function createSvgSprite(){
     .pipe(plumber())
     .pipe(svgSprite({
         mode: {
-            // stack: {
-            //     sprite: "../symbolSprite.svg"
-            // }
-           
-            symbol: {
-                sprite: "../symbolSprite.svg"
-            },
+            stack: {
+                sprite: "../symbolSprite.svg"  //sprite file name
+            }
         },
     }))
     .pipe(dest('app/images/'))
