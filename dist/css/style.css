@@ -662,7 +662,7 @@ svg {
 .form__input {
   background-color: rgba(0, 0, 0, 0.16);
   border-radius: 3px;
-  font-size: var(--fontSize-16);
+  font-size: 16px;
   padding: 12px 30px 12px 50px;
   color: white;
   min-width: 250px;
@@ -699,7 +699,7 @@ svg {
   background-color: var(--color-blue);
   padding: 15px 24px;
   color: white;
-  font-size: var(--fontSize-16);
+  font-size: 16px;
   border-radius: 3px;
   position: relative;
 }
@@ -743,7 +743,7 @@ svg {
 
 .manBanner--big {
   background-image: url(../images/svg/manBanner_bg2.svg);
-  font-size: var(--fontSize-18);
+  font-size: 18px;
   padding: 0px 21px  26px 21px;
 }
 
@@ -775,7 +775,7 @@ svg {
   padding: 27px 50px 49px;
   -webkit-clip-path: url(#clipPath-btn);
   clip-path: url(#clipPath-btn);
-  font-size: var(--fontSize-16);
+  font-size: 16px;
   background-color: var(--color-gray);
 }
 
@@ -860,7 +860,7 @@ svg {
 }
 
 .scroller__itemNumber {
-  font-size: var(--fontSize-16);
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
@@ -970,7 +970,7 @@ svg {
 }
 
 .header__phoneNumber {
-  font-size: var(--fontSize-20);
+  font-size: 20px;
   margin-left: 12px;
   color: var(--color-gray);
   white-space: nowrap;
@@ -1028,7 +1028,7 @@ svg {
 }
 
 .header__buttonText {
-  font-size: var(--fontSize-16);
+  font-size: 16px;
   margin-left: 7.08955%;
 }
 
@@ -1260,12 +1260,12 @@ svg {
 }
 
 .experience__DetailsTitle {
-  font-size: var(--fontSize-22);
+  font-size: 22px;
   margin-bottom: 9px;
 }
 
 .experience__DetailsList {
-  font-size: var(--fontSize-18);
+  font-size: 18px;
   line-height: 25px;
 }
 
@@ -1461,13 +1461,13 @@ svg {
 }
 
 .afterWork__itemName {
-  font-size: var(--fontSize-20);
+  font-size: 20px;
   margin-bottom: 34px;
 }
 
 .afterWork__itemLi {
   position: relative;
-  font-size: var(--fontSize-16);
+  font-size: 16px;
   line-height: 19px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1692,7 +1692,7 @@ svg {
 .methods__number {
   padding: 50px 27px 50px 0px;
   background-image: url(../images/svg/methodNumber_bg.svg);
-  font-size: var(--fontSize-22);
+  font-size: 22px;
   background-repeat: no-repeat;
   position: relative;
   left: -1px;
@@ -2061,7 +2061,7 @@ svg {
 
 .prices__desc {
   margin-top: 38px;
-  font-size: var(--fontSize-16);
+  font-size: 18px;
   max-width: 894px;
   margin-bottom: 30px;
 }
@@ -2427,7 +2427,7 @@ svg {
   margin-left: 0;
   max-width: 204px;
   margin-bottom: 26px;
-  font-size: var(--fontSize-18);
+  font-size: 18px;
   font-weight: bold;
   padding-top: 28px;
 }
@@ -2464,7 +2464,7 @@ svg {
 .pricesMoney__title {
   margin-bottom: 23px;
   font-weight: bold;
-  font-size: var(--fontSize-18);
+  font-size: 18px;
 }
 
 .pricesMoney__item {
@@ -2954,17 +2954,17 @@ svg {
 }
 
 .footer__itemName {
-  font-size: var(--fontSize-16);
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
 .footer__itemValue {
   font-weight: 500;
-  font-size: var(--fontSize-18);
+  font-size: 18px;
 }
 
 .footer__itemPhone {
-  font-size: var(--fontSize-22);
+  font-size: 22px;
   font-weight: 500;
 }
 

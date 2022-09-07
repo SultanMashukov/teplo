@@ -394,7 +394,7 @@ svg{
     &__input{
         background-color: rgba(0,0,0,.16);
         border-radius: 3px;
-        font-size: var(--fontSize-16);
+        font-size: 16px;
         padding: 12px 30px 12px 50px;
         color: white;
         min-width: 250px;
@@ -412,7 +412,7 @@ svg{
     background-color: var(--color-blue);
     padding: 15px 24px;
     color: white;
-    font-size: var(--fontSize-16);
+    font-size: 16px;
     border-radius: 3px;
     position: relative;
 	&--arrow { 
@@ -448,7 +448,7 @@ svg{
     flex: 0 0 286px;
     &--big{
         background-image: url(../images/svg/manBanner_bg2.svg);
-        font-size: var(--fontSize-18);
+        font-size: 18px;
         padding: 0px 21px  26px 21px ;
     }
     &--small{
@@ -474,7 +474,7 @@ svg{
         width: 243px;
         padding: 27px 50px 49px;
         clip-path: url(#clipPath-btn);
-        font-size: var(--fontSize-16);
+        font-size: 16px;
         background-color: var(--color-gray);
         &:hover{
             color: var(--color-gray);
@@ -533,7 +533,7 @@ svg{
         }
     }
 	&__itemNumber {
-        font-size: var(--fontSize-16);
+        font-size: 16px;
         margin-bottom: 5px;
     }
 	&__itemText { }

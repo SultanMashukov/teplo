@@ -7,7 +7,7 @@
 
 /*HEADER*/
 .header {
-    height: 112px;
+    //height: 112px;
     position: relative;
     &__inner{
         width: 100%;
@@ -161,7 +161,7 @@
         
     }
 	&__phoneNumber {
-        font-size: var(--fontSize-20);
+        font-size: 20px;
         margin-left: 12px;
         color: var(--color-gray);
         white-space: nowrap;
@@ -226,7 +226,7 @@
         flex: 1 0 26px;
     }
 	&__buttonText { 
-        font-size: var(--fontSize-16);
+        font-size: 16px;
         margin-left: pxToPercent(19, 268)#{'%'};
     }
 }
@@ -493,11 +493,11 @@
     }
 	&__Details { }
 	&__DetailsTitle { 
-        font-size: var(--fontSize-22);
+        font-size: 22px;
         margin-bottom: 9px;
     }
 	&__DetailsList { 
-        font-size: var(--fontSize-18);
+        font-size: 18px;
         line-height: 25px;
     }
 	&__timeline { 
@@ -719,13 +719,13 @@
         padding: 37px 30px 39px;
     }
 	&__itemName { 
-        font-size: var(--fontSize-20);
+        font-size: 20px;
         margin-bottom: 34px;
     }
 	&__itemUl { }
     &__itemLi{
         position: relative;
-        font-size: var(--fontSize-16);
+        font-size: 16px;
         line-height: 19px;
         display: flex;
         align-items: center;
@@ -955,7 +955,7 @@
 	&__number {
         padding: 50px 27px 50px 0px;
         background-image: url(../images/svg/methodNumber_bg.svg);
-        font-size: var(--fontSize-22);
+        font-size: 22px;
         background-repeat: no-repeat;
         position: relative;
         left: -1px;
@@ -1324,7 +1324,7 @@
     }
 	&__desc { 
         margin-top: 38px;
-        font-size: var(--fontSize-16);
+        font-size: 18px;
         max-width: 894px;
         margin-bottom: 30px;
     }
@@ -1621,7 +1621,7 @@
                 margin-left: 0;
                 max-width: 204px;
                 margin-bottom: 26px;
-                font-size: var(--fontSize-18);
+                font-size: 18px;
                 font-weight: bold;
                 padding-top: 28px;
             }
@@ -1653,7 +1653,7 @@
 	&__title {
         margin-bottom: 23px;
         font-weight: bold;
-        font-size: var(--fontSize-18); 
+        font-size: 18px; 
     }
 	&__item { 
         background-color: white;
@@ -2274,15 +2274,15 @@
         margin-bottom: 41px;
     }
 	&__itemName { 
-        font-size: var(--fontSize-16);
+        font-size: 16px;
         margin-bottom: 10px;
     }
 	&__itemValue { 
         font-weight: 500;
-        font-size: var(--fontSize-18);
+        font-size: 18px;
     }
 	&__itemPhone { 
-        font-size: var(--fontSize-22);
+        font-size: 22px;
         font-weight: 500;
     }
 	&__socials { 
